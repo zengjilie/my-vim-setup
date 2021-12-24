@@ -16,6 +16,9 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'git://git.wincent.com/command-t.git'
 
+Plugin 'iamcco/markdown-preview.nvim'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 Plugin 'mattn/emmet-vim'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'neoclide/coc.nvim'
@@ -35,17 +38,13 @@ let &t_EI = "\e[2 q"
 let g:airline_theme='tomorrow'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+"switch between buffers
 map gn :bn<cr>
 map gp :bp<cr>
 map gd :bd<cr>
 inoremap jk <ESC>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-Left> :tabprevious<CR>
-nnoremap <C-Right> :tabnext<CR>
-nnoremap <C-s> :MarkdownPreview<CR>
-nnoremap <M-s> :MarkdownPreviewStop<CR>
-nnoremap <C-p> :MarkdownPreviewToggle<CR>
 "emmet remapping
 let g:user_emmet_leader_key = '<C-E>'
 "coc.nvim Plugin
@@ -377,6 +376,5 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
-
 
 
