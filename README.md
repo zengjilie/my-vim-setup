@@ -33,7 +33,7 @@ All plugins are from [Vim Awesome](https://vimawesome.com/)
 ### What's included?
 
 
-* Mardown Preview
+* Markdown Preview
     ![image](./markdown-preview.png)
     
     `:MarkdownPreview` `:MarkdownPreviewStop`
