@@ -1,7 +1,5 @@
 # My Vim Config
 
-
-
 My plugin manager [Vundle](https://github.com/VundleVim/Vundle.vim) 
 
 All plugins are from [Vim Awesome](https://vimawesome.com/)
@@ -9,9 +7,10 @@ All plugins are from [Vim Awesome](https://vimawesome.com/)
 ### Table of Content
 
 
+
 * [Installation](#installation)
 * [Caveats](#caveats)
-* [What's Included?](#what--s-included)
+* [How to Use](#how-to-use)
 
 ### Installation
 
@@ -48,8 +47,7 @@ Then run `:PluginInstall`
 
    You need to install fzf (fuzzy finder) first, see [fzf](https://github.com/junegunn/fzf) installation instructions. I used `brew install fzf`
 
-### What's included
-
+### How to Use
 
 * Markdown Preview
     ![image](./markdown-preview.png)
