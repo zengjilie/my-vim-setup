@@ -1,13 +1,16 @@
 # My Vim Config
 
+
 My plugin manager [Vundle](https://github.com/VundleVim/Vundle.vim) 
 
 All plugins are from [Vim Awesome](https://vimawesome.com/)
 
 ### Table of Content
+
 * [Installation](#installation)
-* [Caveattes](#caveates)
-* [What's Included?](#what's-included?)
+* [Caveates](#caveates)
+* [What's Included?](#what's-included)
+
 ### Installation
 
 Copy everything inside `.vimrc` file, and paste them into your `.vimrc` file
@@ -42,7 +45,8 @@ Then run `:PluginInstall`
 4. Regarding plugin `'junegunn/fzf'`
 
    You need to install fzf (fuzzy finder) first, see [fzf](https://github.com/junegunn/fzf) installation instructions. I used `brew install fzf`
-### What's included?
+
+### What's included
 
 
 * Markdown Preview
