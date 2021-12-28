@@ -3,11 +3,14 @@
 
 
 
+
+
 My plugin manager [Vundle](https://github.com/VundleVim/Vundle.vim) 
 
 All plugins are from [Vim Awesome](https://vimawesome.com/)
 
 ### Installation
+
 
 
 
@@ -64,14 +67,15 @@ Then run `:PluginInstall`
     
     ![image](./syntax-highlighting.png)
 
-* Directory icon 
+* Directory preview/icon 
 
     ![image](./directory.png)
+     
+    nerdtree is opened by default
+
     `\ + n` to go back to nerdtree, `gn` to go back to tab
 
     `Ctrl + t` to toggle nerdtree
-    
-    `Ctrl + n` to swtich between current file and nerdtre
     
    `o` to open the file in nerdtree
 * Emmet autocomplete
@@ -86,6 +90,7 @@ Then run `:PluginInstall`
     ![image](./fuzzy-finder.png)
 
     `Ctrl + p` to open finder, choose the one you like 
+
 
 
 
