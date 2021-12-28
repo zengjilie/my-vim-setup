@@ -63,6 +63,9 @@ autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif
 
 "emmet remapping
 let g:user_emmet_leader_key = '<C-E>'
+"set markdown
+"do not close buffer when switching to another
+let g:mkdp_auto_close = 0
 "coc.nvim Plugin
 " Set internal encoding of vim, not needed on neovim, since coc.nvim using some
 " TextEdit might fail if hidden is not set.
