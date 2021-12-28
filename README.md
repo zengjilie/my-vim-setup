@@ -1,9 +1,17 @@
 # My Vim Config
 
 
+
 My plugin manager [Vundle](https://github.com/VundleVim/Vundle.vim) 
 
 All plugins are from [Vim Awesome](https://vimawesome.com/)
+
+### Installation
+
+
+Copy everything inside `.vimrc` file, and paste them into your `.vimrc` file
+
+Then run `:PluginInstall`
 
 ### Caveats
 
@@ -30,6 +38,9 @@ All plugins are from [Vim Awesome](https://vimawesome.com/)
    I changed key mapping to `<C-e>` `,` default is `<C-y>` `,`
    
    Here you need to press **Ctrl + e** then press **,** to make it work
+4. Regarding plugin `'junegunn/fzf'`
+
+   You need to install fzf (fuzzy finder) first, see [fzf](https://github.com/junegunn/fzf) installation instructions. I used `brew install fzf`
 ### What's included?
 
 
@@ -54,6 +65,8 @@ All plugins are from [Vim Awesome](https://vimawesome.com/)
 * Directory icon 
 
     ![image](./directory.png)
+    `\ + n` to go back to nerdtree, `gn` to go back to tab
+
     `Ctrl + t` to toggle nerdtree
     
     `Ctrl + n` to swtich between current file and nerdtre
@@ -65,6 +78,12 @@ All plugins are from [Vim Awesome](https://vimawesome.com/)
     ![image](./emmet.png)
     `Ctrl + e` `,` to trigger emmet
 
+
+* Fuzzy finder
+
+    ![image](./fuzzy-finder.png)
+
+    `Ctrl + p` to open finder, choose the one you like 
 
 
 

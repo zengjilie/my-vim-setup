@@ -8,6 +8,7 @@ set shell=bash\ -i
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set rtp+=/opt/homebrew/opt/fzf
 
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -16,6 +17,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'git://git.wincent.com/command-t.git'
 
+Plugin 'junegunn/fzf'
 Plugin 'iamcco/markdown-preview.nvim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
@@ -35,7 +37,7 @@ call vundle#end()
 filetype plugin indent on
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
-let g:airline_theme='tomorrow'
+let g:airline_theme='simple'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 "switch between buffers
@@ -43,8 +45,22 @@ map gn :bn<cr>
 map gp :bp<cr>
 map gd :bd<cr>
 inoremap jk <ESC>
-nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+nnoremap <C-p> :FZF<CR>
+"nerdtree setting
+" Start NERDTree and put the cursor back in the other window.
+autocmd VimEnter * NERDTree | wincmd p
+" Exit Vim if NERDTree is the only window remaining in the only tab.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+" If another buffer tries to replace NERDTree, put it in the other window, and bring back NERDTree.
+autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
+            \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
+" Open the existing NERDTree on each new tab.
+autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif
+
 "emmet remapping
 let g:user_emmet_leader_key = '<C-E>'
 "coc.nvim Plugin
@@ -376,5 +392,6 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
 
 
