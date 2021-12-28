@@ -17,6 +17,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'git://git.wincent.com/command-t.git'
 
+Plugin 'mxw/vim-jsx'
 Plugin 'junegunn/fzf'
 Plugin 'iamcco/markdown-preview.nvim'
 Plugin 'godlygeek/tabular'
