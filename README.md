@@ -2,11 +2,13 @@
 
 
 
+
 My plugin manager [Vundle](https://github.com/VundleVim/Vundle.vim) 
 
 All plugins are from [Vim Awesome](https://vimawesome.com/)
 
 ### Installation
+
 
 
 Copy everything inside `.vimrc` file, and paste them into your `.vimrc` file
@@ -44,7 +46,7 @@ Then run `:PluginInstall`
 ### What's included?
 
 
-* Mardown Preview
+* Markdown Preview
     ![image](./markdown-preview.png)
     
     `:MarkdownPreview` `:MarkdownPreviewStop`
