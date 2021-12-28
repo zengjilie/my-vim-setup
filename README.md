@@ -1,18 +1,14 @@
 # My Vim Config
 
-
-
-
-
-
 My plugin manager [Vundle](https://github.com/VundleVim/Vundle.vim) 
 
 All plugins are from [Vim Awesome](https://vimawesome.com/)
 
+### Table of Content
+* [Installation](#installation)
+* [Caveattes](#caveates)
+* [What's Included?](#what's-included?)
 ### Installation
-
-
-
 
 Copy everything inside `.vimrc` file, and paste them into your `.vimrc` file
 
