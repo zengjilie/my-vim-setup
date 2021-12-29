@@ -1,5 +1,6 @@
 # My Vim Config
 
+
 My plugin manager [Vundle](https://github.com/VundleVim/Vundle.vim) 
 
 All plugins are from [Vim Awesome](https://vimawesome.com/)
@@ -49,6 +50,7 @@ Then run `:PluginInstall`
 
 ## How to Use
 
+
 * Markdown Preview
     ![image](./markdown-preview.png)
     
@@ -67,7 +69,7 @@ Then run `:PluginInstall`
     
     ![image](./syntax-highlighting.png)
 
-* Directory preview/icon 
+* Directory preview/icon (include hidden files)
 
     ![image](./directory.png)
      
