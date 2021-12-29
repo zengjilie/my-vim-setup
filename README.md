@@ -4,7 +4,7 @@ My plugin manager [Vundle](https://github.com/VundleVim/Vundle.vim)
 
 All plugins are from [Vim Awesome](https://vimawesome.com/)
 
-### Table of Contents
+## Table of Contents
 
 
 
@@ -12,13 +12,13 @@ All plugins are from [Vim Awesome](https://vimawesome.com/)
 * [Caveats](#caveats)
 * [How to Use](#how-to-use)
 
-### Installation
+## Installation
 
 Copy everything inside `.vimrc` file, and paste them into your `.vimrc` file
 
 Then run `:PluginInstall`
 
-### Caveats
+## Caveats
 
 
 1. Regarding plugin `'markdown-preview-nvim'`
@@ -47,7 +47,7 @@ Then run `:PluginInstall`
 
    You need to install fzf (fuzzy finder) first, see [fzf](https://github.com/junegunn/fzf) installation instructions. I used `brew install fzf`
 
-### How to Use
+## How to Use
 
 * Markdown Preview
     ![image](./markdown-preview.png)
