@@ -1,4 +1,3 @@
-set wildmenu
 set clipboard=unnamed
 syntax on 
 set nocompatible
@@ -9,6 +8,9 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set rtp+=/opt/homebrew/opt/fzf
+"allow these guys to load .env files
+let NERDTreeShowHidden=1
+let $FZF_DEFAULT_COMMAND='find -L'
 
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -62,11 +64,10 @@ autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_
 " Open the existing NERDTree on each new tab.
 autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif
 
+"set markdown
+let g:mkdp_auto_close = 0
 "emmet remapping
 let g:user_emmet_leader_key = '<C-E>'
-"set markdown
-"do not close buffer when switching to another
-let g:mkdp_auto_close = 0
 "coc.nvim Plugin
 " Set internal encoding of vim, not needed on neovim, since coc.nvim using some
 " TextEdit might fail if hidden is not set.
