@@ -4,7 +4,7 @@ My plugin manager [Vundle](https://github.com/VundleVim/Vundle.vim)
 
 All plugins are from [Vim Awesome](https://vimawesome.com/)
 
-### Table of Content
+### Table of Contents
 
 
 
