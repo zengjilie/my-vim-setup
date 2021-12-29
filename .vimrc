@@ -8,9 +8,8 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set rtp+=/opt/homebrew/opt/fzf
-"allow these guys to load .env files
+"allowing to load .env files
 let NERDTreeShowHidden=1
-let $FZF_DEFAULT_COMMAND='find -L'
 
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
