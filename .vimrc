@@ -8,17 +8,20 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set rtp+=/opt/homebrew/opt/fzf
+set background=dark
+"allow js syntax hightlighting
+let g:javascript_plugin_jsdoc = 1
 "allow these guys to load .env files
 let NERDTreeShowHidden=1
-let $FZF_DEFAULT_COMMAND='find -L'
+"change vim color"
 
-filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'git://git.wincent.com/command-t.git'
 
+Plugin 'flazz/vim-colorschemes'
 Plugin 'mxw/vim-jsx'
 Plugin 'junegunn/fzf'
 Plugin 'iamcco/markdown-preview.nvim'
@@ -37,6 +40,8 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'valloric/youcompleteme'
 Plugin 'altercation/solarized'
 call vundle#end()
+
+colorscheme gruvbox
 filetype plugin indent on
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
