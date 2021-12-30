@@ -1,6 +1,7 @@
 # My Vim Config
 
 
+
 My plugin manager [Vundle](https://github.com/VundleVim/Vundle.vim) 
 
 All plugins are from [Vim Awesome](https://vimawesome.com/)
@@ -20,6 +21,7 @@ Copy everything inside `.vimrc` file, and paste them into your `.vimrc` file
 Then run `:PluginInstall`
 
 ## Caveats
+
 
 
 1. Regarding plugin `'markdown-preview-nvim'`
@@ -48,6 +50,10 @@ Then run `:PluginInstall`
 
    You need to install fzf (fuzzy finder) first, see [fzf](https://github.com/junegunn/fzf) installation instructions. I used `brew install fzf`
 
+5. Regarding plugin`'Plugin 'flazz/vim-colorschemes'`
+    
+   `colorscheme <color_scheme>` must below `call vundle#end()`
+
 ## How to Use
 
 
@@ -55,11 +61,16 @@ Then run `:PluginInstall`
     ![image](./markdown-preview.png)
     
     `:MarkdownPreview` `:MarkdownPreviewStop`
-* Customized theme
+* Customized theme(vim + tabline)
 
-    My theme setting `let g:airline_theme='tomorrow'`
+    ![image](./color-theme.png)
+
+    Tabline theme setting `let g:airline_theme='simple'`
+
+    Vim theme setting `colorscheme gruvbox`
     
-    You can check out more here [vim-airline](https://github.com/vim-airline/vim-airline/wiki/Screenshots)
+    Check out more here [vim-airline](https://github.com/vim-airline/vim-airline/wiki/Screenshots) + [vimcolortheme](https://vimcolorschemes.com/)
+
 
 * Buffer switching
     
