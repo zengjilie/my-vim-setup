@@ -8,12 +8,17 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set rtp+=/opt/homebrew/opt/fzf
+<<<<<<< HEAD
 set background=dark
 "allow js syntax hightlighting
 let g:javascript_plugin_jsdoc = 1
 "allow these guys to load .env files
 let NERDTreeShowHidden=1
 "change vim color"
+=======
+"allowing to load .env files
+let NERDTreeShowHidden=1
+>>>>>>> 3b1881af07da30dec559f6a739d0dc0a2f35363f
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
