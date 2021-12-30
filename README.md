@@ -2,6 +2,7 @@
 
 
 
+
 My plugin manager [Vundle](https://github.com/VundleVim/Vundle.vim) 
 
 All plugins are from [Vim Awesome](https://vimawesome.com/)
@@ -20,7 +21,9 @@ Copy everything inside `.vimrc` file, and paste them into your `.vimrc` file
 
 Then run `:PluginInstall`
 
+
 ## Caveats
+
 
 
 
@@ -50,7 +53,7 @@ Then run `:PluginInstall`
 
    You need to install fzf (fuzzy finder) first, see [fzf](https://github.com/junegunn/fzf) installation instructions. I used `brew install fzf`
 
-5. Regarding plugin`'Plugin 'flazz/vim-colorschemes'`
+5. Regarding plugin`'flazz/vim-colorschemes'`
     
    `colorscheme <color_scheme>` must below `call vundle#end()`
 
