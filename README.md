@@ -3,6 +3,7 @@
 
 
 
+
 My plugin manager [Vundle](https://github.com/VundleVim/Vundle.vim) 
 
 All plugins are from [Vim Awesome](https://vimawesome.com/)
@@ -23,6 +24,7 @@ Then run `:PluginInstall`
 
 
 ## Caveats
+
 
 
 
@@ -107,7 +109,11 @@ Then run `:PluginInstall`
 
     `Ctrl + p` to open finder, choose the one you like 
 
+* Tagbar
 
+    ![image](./tagbar.png)
+
+    `F8` open tagbar, `tn` switch to tagbar
 
 
 

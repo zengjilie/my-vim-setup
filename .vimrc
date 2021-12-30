@@ -8,17 +8,12 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set rtp+=/opt/homebrew/opt/fzf
-<<<<<<< HEAD
 set background=dark
 "allow js syntax hightlighting
 let g:javascript_plugin_jsdoc = 1
 "allow these guys to load .env files
 let NERDTreeShowHidden=1
 "change vim color"
-=======
-"allowing to load .env files
-let NERDTreeShowHidden=1
->>>>>>> 3b1881af07da30dec559f6a739d0dc0a2f35363f
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -26,6 +21,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'git://git.wincent.com/command-t.git'
 
+Plugin 'majutsushi/tagbar'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'mxw/vim-jsx'
 Plugin 'junegunn/fzf'
@@ -45,7 +41,6 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'valloric/youcompleteme'
 Plugin 'altercation/solarized'
 call vundle#end()
-
 colorscheme gruvbox
 filetype plugin indent on
 let &t_SI = "\e[6 q"
@@ -53,6 +48,8 @@ let &t_EI = "\e[2 q"
 let g:airline_theme='simple'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+nnoremap <F8> :TagbarToggle<CR>
+nnoremap tn :TagbarOpen fj<CR>
 "switch between buffers
 map gn :bn<cr>
 map gp :bp<cr>
