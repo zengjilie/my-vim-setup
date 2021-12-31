@@ -41,6 +41,7 @@ Plugin 'prettier/prettier'
 Plugin 'prettier/vim-prettier'
 Plugin 'valloric/youcompleteme'
 Plugin 'altercation/solarized'
+Plugin 'tmsvg/pear-tree'
 
 call vundle#end()
 colorscheme gruvbox
@@ -59,12 +60,12 @@ nnoremap tn :TagbarOpen fj<CR>
 map gn :bn<cr>
 map gp :bp<cr>
 map gd :bp\|bd #<cr>
-imap jk <ESC>
+inoremap jk <ESC>
 "nerdtree
 map nn :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
+map <C-n> :NERDTree<CR>
 map tt :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
+map <C-f> :NERDTreeFind<CR>
 map ff :FZF<CR>
 
 "nerdtree setting
@@ -82,6 +83,7 @@ autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif
 let g:mkdp_auto_close = 0
 map mp :MarkdownPreview<cr>
 map mps :MarkdownPreviewStop<cr>
+
 "coc.nvim Plugin
 " Set internal encoding of vim, not needed on neovim, since coc.nvim using some
 " TextEdit might fail if hidden is not set.
