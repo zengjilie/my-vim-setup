@@ -4,6 +4,7 @@
 
 
 
+
 My plugin manager [Vundle](https://github.com/VundleVim/Vundle.vim) 
 
 All plugins are from [Vim Awesome](https://vimawesome.com/)
@@ -61,6 +62,12 @@ Then run `:PluginInstall`
 
 ## How to Use
 
+
+* Prettifier
+
+    `sudo npm i -g prettier` or `yarn global add prettier`
+    
+    To execute prettier `:Prettier`
 
 * Markdown Preview
     ![image](./markdown-preview.png)

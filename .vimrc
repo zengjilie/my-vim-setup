@@ -37,9 +37,11 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-airline/vim-airline'
 Plugin 'pangloss/vim-javascript'
-
+Plugin 'prettier/prettier'
+Plugin 'prettier/vim-prettier'
 Plugin 'valloric/youcompleteme'
 Plugin 'altercation/solarized'
+
 call vundle#end()
 colorscheme gruvbox
 filetype plugin indent on
