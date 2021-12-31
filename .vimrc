@@ -59,13 +59,13 @@ nnoremap tn :TagbarOpen fj<CR>
 map gn :bn<cr>
 map gp :bp<cr>
 map gd :bp\|bd #<cr>
-inoremap jk <ESC>
+imap jk <ESC>
 "nerdtree
-nnoremap nn :NERDTreeFocus<CR>
+map nn :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
-nnoremap tt :NERDTreeToggle<CR>
+map tt :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
-nnoremap ff :FZF<CR>
+map ff :FZF<CR>
 
 "nerdtree setting
 " Start NERDTree and put the cursor back in the other window.
@@ -80,6 +80,8 @@ autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif
 
 "set markdown
 let g:mkdp_auto_close = 0
+map mp :MarkdownPreview<cr>
+map mps :MarkdownPreviewStop<cr>
 "coc.nvim Plugin
 " Set internal encoding of vim, not needed on neovim, since coc.nvim using some
 " TextEdit might fail if hidden is not set.

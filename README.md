@@ -1,5 +1,7 @@
 # My Vim Config
 
+
+
 My plugin manager [Vundle](https://github.com/VundleVim/Vundle.vim) 
 
 All plugins are from [Vim Awesome](https://vimawesome.com/)
@@ -52,6 +54,8 @@ Then run `:PluginInstall`
 
 
 
+
+
 * Prettifier
 
     `sudo npm i -g prettier` or `yarn global add prettier`
@@ -61,7 +65,7 @@ Then run `:PluginInstall`
 * Markdown Preview
     ![image](./markdown-preview.png)
     
-    `:MarkdownPreview` `:MarkdownPreviewStop`
+    `mp` `mps`
 * Customized theme(vim + tabline)
 
     ![image](./color-theme.png)
