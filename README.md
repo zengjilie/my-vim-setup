@@ -1,10 +1,5 @@
 # My Vim Config
 
-
-
-
-
-
 My plugin manager [Vundle](https://github.com/VundleVim/Vundle.vim) 
 
 All plugins are from [Vim Awesome](https://vimawesome.com/)
@@ -37,6 +32,7 @@ Then run `:PluginInstall`
     If run command `:MarkdownPreview`, show error `no matching autocommands`
 
     Go to `cd ~/.vim/bundle/markdown-preview.nvim/app` run command `yarn install`
+   
 2. Regarding plugin `'ryanoasis/vim-devicons'`
 
    There is possiblity that your icon will appear `?` mark
@@ -47,20 +43,13 @@ Then run `:PluginInstall`
 
    Switching the current font of your terminal to your `nerd font`, it will solve the problem
 
-3. Regarding plugin `'mattn/emmet-vim'`
-   
-   I changed key mapping to `<C-e>` `,` default is `<C-y>` `,`
-   
-   Here you need to press **Ctrl + e** then press **,** to make it work
-4. Regarding plugin `'junegunn/fzf'`
+3. Regarding plugin `'junegunn/fzf'`
 
    You need to install fzf (fuzzy finder) first, see [fzf](https://github.com/junegunn/fzf) installation instructions. I used `brew install fzf`
 
-5. Regarding plugin`'flazz/vim-colorschemes'`
-    
-   `colorscheme <color_scheme>` must below `call vundle#end()`
 
 ## How to Use
+
 
 
 * Prettifier
@@ -98,23 +87,23 @@ Then run `:PluginInstall`
      
     nerdtree is opened by default
 
-    `\ + n` to go back to nerdtree, `gn` to go back to tab
+    `nn` to go back to nerdtree, `gn` to go back to tab
 
-    `Ctrl + t` to toggle nerdtree
+    `tt` to toggle nerdtree
     
    `o` to open the file in nerdtree
 * Emmet autocomplete
 
 
     ![image](./emmet.png)
-    `Ctrl + e` `,` to trigger emmet
+    `,,` to trigger emmet
 
 
 * Fuzzy finder
 
     ![image](./fuzzy-finder.png)
 
-    `Ctrl + p` to open finder, choose the one you like 
+    `ff` to open finder, choose the one you like 
 
 * Tagbar
 

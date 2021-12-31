@@ -45,6 +45,9 @@ Plugin 'altercation/solarized'
 call vundle#end()
 colorscheme gruvbox
 filetype plugin indent on
+"emmet
+let g:user_emmet_leader_key=','
+
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
 let g:airline_theme='simple'
@@ -57,11 +60,12 @@ map gn :bn<cr>
 map gp :bp<cr>
 map gd :bp\|bd #<cr>
 inoremap jk <ESC>
-nnoremap <leader>n :NERDTreeFocus<CR>
+"nerdtree
+nnoremap nn :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap tt :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
-nnoremap <C-p> :FZF<CR>
+nnoremap ff :FZF<CR>
 
 "nerdtree setting
 " Start NERDTree and put the cursor back in the other window.
@@ -76,8 +80,6 @@ autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif
 
 "set markdown
 let g:mkdp_auto_close = 0
-"emmet remapping
-let g:user_emmet_leader_key = '<C-E>'
 "coc.nvim Plugin
 " Set internal encoding of vim, not needed on neovim, since coc.nvim using some
 " TextEdit might fail if hidden is not set.
