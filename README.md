@@ -3,6 +3,7 @@
 
 
 
+
 My plugin manager [Vundle](https://github.com/VundleVim/Vundle.vim) 
 
 All plugins are from [Vim Awesome](https://vimawesome.com/)
@@ -51,7 +52,9 @@ Then run `:PluginInstall`
    You need to install fzf (fuzzy finder) first, see [fzf](https://github.com/junegunn/fzf) installation instructions. I used `brew install fzf`
 
 
+
 ## How to Use
+
 
 
 
@@ -64,7 +67,7 @@ Then run `:PluginInstall`
     
     To execute prettier `:Prettier`
     
-* Paring (, {, [, etc
+* Auto-paring (, {, [, etc
 
 * Markdown Preview
     ![image](./markdown-preview.png)
