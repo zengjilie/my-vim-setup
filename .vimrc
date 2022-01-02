@@ -1,9 +1,10 @@
 set clipboard=unnamed
 syntax on 
 set nocompatible
+set shell=/bin/zsh
 set number
+set splitbelow
 set relativenumber
-set shell=bash\ -i
 set tabstop=4
 set shiftwidth=4
 set expandtab
