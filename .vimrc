@@ -57,8 +57,8 @@ let g:airline_powerline_fonts = 1
 nnoremap <F8> :TagbarToggle<CR>
 nnoremap tn :TagbarOpen fj<CR>
 "switch between buffers
-map gn :bn<cr>
-map gp :bp<cr>
+map gm :bn<cr>
+map gn :bp<cr>
 map gd :bp\|bd #<cr>
 inoremap jk <ESC>
 "nerdtree

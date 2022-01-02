@@ -4,6 +4,7 @@
 
 
 
+
 My plugin manager [Vundle](https://github.com/VundleVim/Vundle.vim) 
 
 All plugins are from [Vim Awesome](https://vimawesome.com/)
@@ -61,6 +62,7 @@ Then run `:PluginInstall`
 
 
 
+
 * Prettifier
 
     `sudo npm i -g prettier` or `yarn global add prettier`
@@ -86,7 +88,7 @@ Then run `:PluginInstall`
 
 * Buffer switching
     
-    `gn`(next buffer),`gb`(back buffer),`gd`(delete buffer)
+    `gm`(next buffer),`gn`(previous buffer),`gd`(delete buffer)
 
 * Syntax highlighting
     
