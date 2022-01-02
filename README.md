@@ -67,7 +67,7 @@ Then run `:PluginInstall`
 
     `sudo npm i -g prettier` or `yarn global add prettier`
     
-    To execute prettier `:Prettier`
+    To execute prettier `\p` or `:Prettier`
     
 * Auto-paring (, {, [, etc
 
