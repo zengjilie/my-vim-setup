@@ -42,7 +42,7 @@ Plugin 'prettier/prettier'
 Plugin 'prettier/vim-prettier'
 Plugin 'valloric/youcompleteme'
 Plugin 'altercation/solarized'
-Plugin 'tmsvg/pear-tree'
+Plugin 'jiangmiao/auto-pairs'
 
 call vundle#end()
 colorscheme gruvbox
