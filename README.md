@@ -88,7 +88,7 @@ Then run `:PluginInstall`
 
 * Buffer switching
     
-    `gm`(next buffer),`gn`(previous buffer),`gd`(delete buffer)
+    `gm`next buffer,`gn`previous buffer,`gd`delete buffer
 
 * Syntax highlighting
     
@@ -100,23 +100,23 @@ Then run `:PluginInstall`
      
     nerdtree is opened by default
 
-    `nn` to go back to nerdtree, `gn` to go back to tab
+    `nn` go back to nerdtree, `gn` go back to tab
 
-    `tt` to toggle nerdtree
+    `tt` toggle nerdtree
     
    `o` to open the file in nerdtree
 * Emmet autocomplete
 
 
     ![image](./emmet.png)
-    `,,` to trigger emmet
+    `,,` trigger emmet
 
 
 * Fuzzy finder
 
     ![image](./fuzzy-finder.png)
 
-    `ff` to open finder, choose the one you like 
+    `ff` open finder, choose the one you like 
 
 * Tagbar
 
