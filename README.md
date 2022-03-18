@@ -116,7 +116,7 @@ Then run `:PluginInstall`
 
     ![image](./fuzzy-finder.png)
 
-    `ff` open finder, choose the one you like 
+    `ff` open fuzzy finder
 
 * Tagbar
 
