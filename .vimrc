@@ -22,13 +22,13 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'git://git.wincent.com/command-t.git'
 
+Plugin 'leafgarland/typescript-vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'mxw/vim-jsx'
 Plugin 'junegunn/fzf'
 Plugin 'iamcco/markdown-preview.nvim'
 Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
 Plugin 'mattn/emmet-vim'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'neoclide/coc.nvim'
@@ -38,11 +38,11 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-airline/vim-airline'
 Plugin 'pangloss/vim-javascript'
-Plugin 'prettier/prettier'
-Plugin 'prettier/vim-prettier'
 Plugin 'valloric/youcompleteme'
 Plugin 'altercation/solarized'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'eslint/eslint'
+Plugin 'chiel92/vim-autoformat'
 
 call vundle#end()
 colorscheme gruvbox
@@ -62,12 +62,16 @@ map gm :bn<cr>
 map gn :bp<cr>
 map gd :bp\|bd #<cr>
 inoremap jk <ESC>
+
 "nerdtree
-map nn :NERDTreeFocus<CR>
-map <C-n> :NERDTree<CR>
+"map nn :NERDTreeFocus<CR>
+map <C-n> :NERDTreeFocus<CR>
 map tt :NERDTreeToggle<CR>
-map <C-f> :NERDTreeFind<CR>
+"map <C-f> :NERDTreeFind<CR>
+
 map ff :FZF<CR>
+"autoformate
+nnoremap <leader>p :Autoformat<CR>
 
 "nerdtree setting
 " Start NERDTree and put the cursor back in the other window.
